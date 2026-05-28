@@ -1,0 +1,45 @@
+frontend:
+    build:
+      context: ./front-end/frontend
+      dockerfile: Dockerfile
+      args:
+        - REACT_APP_API_URL=https://0kms37kval.execute-api.us-east-1.amazonaws.com/api
+    container_name: gamevault-frontend
+    ports:
+      - "80:3000"
+    depends_on:
+      - backend
+    restart: always
+    networks:
+      - gamevault-networkversion: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./back-end/backend
+      dockerfile: Dockerfile
+    container_name: gamevault-backend
+    ports:
+      - "8080:8080"
+    environment:
+      - DB_HOST=catalogo-games-postgres.c9b9qy6nwjee.us-east-1.rds.amazonaws.com
+      - DB_USER=postgres
+      - DB_PASSWORD=MagnoGames2026!
+    restart: always
+    networks:
+      - gamevault-network
+
+  frontend:
+    build:
+      context: ./front-end/frontend
+      dockerfile: Dockerfsile
+      args:
+        - REACT_APP_API_URL=http://gamevault-alb-691450868.us-east-1.elb.amazonaws.com/api
+    container_name: gamevault-frontend
+    ports:
+      - "3000:3000"
+    depends_on:s
+      - backend
+    restart: always
+    networks:
+      - gamevault-net
