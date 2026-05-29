@@ -677,7 +677,6 @@ curl http://localhost:8080/api/games/report
 ## 📌 Observações Importantes
 
 - As credenciais do banco e da AWS não devem ser colocadas no código.
-- O arquivo `.gitignore` deve bloquear chaves, arquivos `.env`, pacotes `.tar.gz`, arquivos de infraestrutura e credenciais.
 - O RDS deve permanecer sem acesso público direto.
 - A comunicação com o banco deve ser feita pelo backend.
 - A Lambda depende da variável `BACKEND_URL` configurada corretamente.
