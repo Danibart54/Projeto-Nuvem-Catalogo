@@ -157,29 +157,6 @@ flowchart TD
 
 ---
 
-## ☁️ Arquitetura Geral na AWS
-
-```mermaid
-flowchart TD
-    U[Usuário] --> FE[Frontend React em container]
-    FE --> APIGW[Amazon API Gateway]
-    APIGW -->|ANY /api/{proxy+}| BE[Backend Spring Boot em container]
-    APIGW -->|GET /report| LAMBDA[AWS Lambda gamevault-report]
-    LAMBDA -->|Consulta dados| BE
-    BE --> RDS[Amazon RDS PostgreSQL]
-
-    subgraph AWS[AWS Cloud]
-        subgraph VPC[VPC catalogo-games-vpc]
-            FE
-            BE
-            RDS
-            LAMBDA
-            APIGW
-        end
-    end
-```
-
----
 
 ## 🔄 Fluxo de Funcionamento
 
