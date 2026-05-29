@@ -27,7 +27,6 @@ Além da aplicação principal, o projeto também possui uma funcionalidade de r
 ### Frontend
 
 - React 18
-- Axios
 - JavaScript
 - HTML e CSS
 - Docker
@@ -39,8 +38,6 @@ Além da aplicação principal, o projeto também possui uma funcionalidade de r
 - Spring Web
 - Spring Data JPA
 - Hibernate
-- Jakarta Validation
-- Lombok
 - PostgreSQL Driver
 - Docker
 
