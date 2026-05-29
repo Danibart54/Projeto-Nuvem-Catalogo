@@ -8,9 +8,9 @@ Projeto full-stack desenvolvido para cadastro, listagem, edição, remoção e c
 
 | Nome | RA | Responsabilidade principal |
 |---|---:|---|
-| Daniel Bartels de Carli | 10436801 | Conexão geral da aplicação, integração entre serviços e configuração do RDS |
+| Daniel Bartels de Carli | 10436801 | Conexão geral da aplicação, integração entre serviços e configuração do RDS e Lambda |
 | Magno Rogério de Oliveira Júnior | 10439896 | Configuração do API Gateway e rotas de integração |
-| Luiz Filipe Batista dos Santos | 10438938 | Desenvolvimento e configuração da função Lambda de relatório |
+| Luiz Filipe Batista dos Santos | 10438938 | Desenvolvimento do Frontend e Backend |
 
 ---
 
