@@ -461,24 +461,6 @@ Algumas práticas aplicadas no projeto:
 - Variáveis sensíveis fora do código-fonte.
 - Arquivos `.env`, `.pem`, `.key`, `.tfstate` e credenciais listados no `.gitignore`.
 - Backend acessa o banco por variáveis de ambiente.
-
-Arquivos que não devem ser enviados ao GitHub:
-
-```gitignore
-*.pem
-*.key
-*.env
-.env.local
-.env.*.local
-*.credentials
-aws-credentials.txt
-credentials.json
-*.tfstate
-*.tfvars
-gamevault.tar.gz
-ec2-info.txt
-```
-
 ---
 
 ## ▶️ Como Executar Localmente
